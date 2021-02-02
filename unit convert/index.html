@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+	<form>
+		<fieldset align="center">
+			<h1>Unit Convert</h1>
+			<input type="button" value="I don't speak english (português)" onclick="Translate()">
+			<p>
+				<p>
+					<span id="text1">From:</span>
+					<span id="text2">To:</span>
+				</p>
+				<input type="number" id="number1" oninput="Convert()">
+				<input type="number" id="number2" oninput="Convert()">
+			</p>
+				<select id="selector1" onchange="Convert()">
+					<option value="default" selected="">Select a unit</option>
+					<option value="m">Meter</option>
+					<option value="km">Kilometer</option>
+					<option value="cm">Centimeter</option>
+					<option value="mm">Millimiter</option>
+					<option value="μm">Micrometer</option>
+					<option value="nm">Nanometer</option>
+					<option value="mi">Mile</option>
+					<option value="yd">Yard</option>
+					<option value="ft">Foot</option>
+					<option value="in">Inch</option>
+					<option value="ly">Light Year</option>
+				</select>
+				<select id="selector2" onchange="Convert()">
+					<option value="default" selected="">Select a unit</option>
+					<option value="m">Meter</option>
+					<option value="km">Kilometer</option>
+					<option value="cm">Centimeter</option>
+					<option value="mm">Millimiter</option>
+					<option value="μm">Micrometer</option>
+					<option value="nm">Nanometer</option>
+					<option value="mi">Mile</option>
+					<option value="yd">Yard</option>
+					<option value="ft">Foot</option>
+					<option value="in">Inch</option>
+					<option value="ly">Light Year</option>			
+				</select>
+			</p>
+			<p>
+				<span id="res"></span>
+			</p>
+		</fieldset>
+	</form>
+<script src="/js/main.js"></script>
+</body>
+</html>
